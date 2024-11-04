@@ -1,0 +1,80 @@
+.page {
+  background-color: var(--foreground);
+  display: flex;
+ margin-top: 100px;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-between;
+  min-height: 40svh;
+  padding: 80px;
+  gap: 64px;
+  font-family: var(--font-geist-sans);
+  width: 50vw;
+  border-radius: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .page {
+    --gray-rgb: 255, 255, 255;
+    --gray-alpha-200: rgba(var(--gray-rgb), 0.145);
+    --gray-alpha-100: rgba(var(--gray-rgb), 0.06);
+
+    --button-primary-hover: #ccc;
+    --button-secondary-hover: #1a1a1a;
+  }
+}
+
+.title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -250px;
+  margin-left: -50px;
+ 
+}
+
+.title span{
+margin-top: -40px;
+}
+
+.fields{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.fields form{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 20vw;
+}
+
+.fields form input{
+  padding: 10px;
+}
+
+.additionals{
+  color: var(--texthighlight);
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.loginBtn{
+  background-color: var(--buttonColor);
+  color: var(--foreground);
+  font-size: 16px;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.fields span{
+  color: var(--texthighlight);
+  cursor: pointer;
+  font-size: 12px;
+}
